@@ -21,8 +21,8 @@ function openModal(edit = false, index = 0) {
 //se for editar, vai pegar os valores pela id e retornar para poder editar
   if (edit) {
     sNome.value = itens[index].nome
-    sEmail.value = itens[index].funcao
-    sCurso.value = itens[index].salario
+    sEmail.value = itens[index].email
+    sCurso.value = itens[index].curso
     id = index
   } else { //Se não, aparecerá vazio para então criar do zero uma id
     sNome.value = ''
@@ -51,10 +51,10 @@ function insertItem(item, index) {
     <td>${item.email}</td>
     <td>${item.curso}</td>
     <td class="acao">
-      <button onclick="editItem(${index})"><i class='bx bx-edit' ></i></button>
+      <button onclick="editItem(${index})"><i class='bx bx-edit bx-border-circle bx-tada-hover' ></i></button>
     </td>
     <td class="acao">
-      <button onclick="deleteItem(${index})"><i class='bx bx-trash'></i></button>
+      <button onclick="deleteItem(${index})"><i class='bx bx-trash bx-border-circle bx-tada-hover'></i></button>
     </td>
   `
   tbody.appendChild(tr)

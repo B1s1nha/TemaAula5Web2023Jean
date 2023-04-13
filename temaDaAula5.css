@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -23,7 +23,7 @@ button {
 .container {
   width: 90%;
   height: 80%;
-  border-radius: 10px;
+  border-radius: 45px;
   background: rgb(254, 250, 224);
 }
 
@@ -44,7 +44,7 @@ button {
 #new {
   font-size: 16px;
   padding: 8px;
-  border-radius: 5px;
+  border-radius: 100px;
   border: none;
   color: rgb(254, 250, 224);
   background-color: rgb(212, 163, 115);
@@ -52,19 +52,20 @@ button {
 
 .divTable {
   padding: 10px;
-  width: auto; 
-  height:inherit; 
-  overflow:auto;
+  width: auto;
+  height: inherit;
+  overflow: auto;
 }
 
 .divTable::-webkit-scrollbar {
+  border-radius: 10px;
   width: 12px;
-  background-color: rgb(250, 237, 205); 
+  background-color: rgb(250, 237, 205);
 }
 
 .divTable::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: rgb(212, 163, 115); 
+  background-color: rgb(212, 163, 115);
 }
 
 table {
@@ -79,7 +80,7 @@ thead {
 }
 
 tr {
-  border-bottom: 1px solid rgb(204, 213, 174)!important;
+  border-bottom: 1px solid rgb(204, 213, 174) !important;
 }
 
 tbody tr td {
@@ -99,7 +100,7 @@ tbody tr {
 }
 
 thead tr th.acao {
-  width: 100px!important;
+  width: 100px !important;
   text-align: center;
 }
 
@@ -111,9 +112,9 @@ tbody tr td.acao {
   body {
     font-size: 10px;
   }
-  
+
   .header span {
-    font-size: 15px;
+    font-size: 18px;
   }
 
   #new {
@@ -122,11 +123,11 @@ tbody tr td.acao {
   }
 
   thead tr th.acao {
-    width: auto!important;
+    width: auto !important;
   }
-  
+
   td button i {
-    font-size: 20px!important;
+    font-size: 20px !important;
   }
 
   td button i:first-child {
@@ -134,11 +135,11 @@ tbody tr td.acao {
   }
 
   .modal {
-    width: 90%!important;
+    width: 90% !important;
   }
 
   .modal label {
-    font-size: 12px!important;
+    font-size: 12px !important;
   }
 }
 
@@ -161,7 +162,7 @@ tbody tr td.acao {
   align-items: center;
   padding: 40px;
   background-color: rgb(254, 250, 224);
-  border-radius: 10px;
+  border-radius: 45px;
   width: 50%;
 }
 
@@ -173,7 +174,7 @@ tbody tr td.acao {
 .modal input {
   width: 100%;
   outline: none;
-  padding: 5px 10px; 
+  padding: 5px 10px;
   width: 100%;
   margin-bottom: 20px;
   border-top: none;
@@ -185,8 +186,8 @@ tbody tr td.acao {
   width: 100%;
   margin: 10px auto;
   outline: none;
-  border-radius: 20px; 
-  padding: 5px 10px; 
+  border-radius: 100px;
+  padding: 5px 10px;
   width: 100%;
   border: none;
   background-color: rgb(212, 163, 115);
@@ -198,7 +199,7 @@ tbody tr td.acao {
 }
 
 .active .modal {
-  animation: modal .4s;
+  animation: modal 0.4s;
 }
 /*Animação do adicionar*/
 @keyframes modal {
