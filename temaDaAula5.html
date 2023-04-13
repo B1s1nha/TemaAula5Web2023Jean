@@ -1,12 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gabriella Huppes</title>
+  <link rel="stylesheet" href="temaDaAula5.css">
+  <!--Importando a fonte e os icones para o botão Editar e Apagar-->
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
-    
+  <div class="container">
+    <div class="header">
+      <span>Dados dos alunos</span>
+      <button onclick="openModal()" id="new">Adicionar</i></button>
+    </div>
+
+    <div class="divTable">
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Curso</th>
+            <th class="acao">Editar</th>
+            <th class="acao">Apagar</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+<!--O valor da modal vem para cá-->
+    <div class="modal-container">
+      <div class="modal">
+        <form>
+          <label for="m-nome">Nome</label>
+          <input id="m-nome" type="text" required />
+  
+          <label for="m-email">Email</label>
+          <input id="m-email" type="text" required />
+  
+          <label for="m-curso">Curso</label>
+          <input id="m-curso" type="text" required />
+          <button id="btnSalvar">Salvar</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <script src="ScriptsDoTema5.js"></script>
 </body>
+
 </html>
